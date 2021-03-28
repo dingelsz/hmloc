@@ -7,7 +7,7 @@ RUN apk add --no-cache python3 py3-pip cloc
 COPY requirments.txt /app/requirments.txt
 RUN pip3 install -r /app/requirments.txt
 
-COPY . /app/
+COPY app/ /app/
 
 ENV GUNICORN_WORKERS 1
 ENV GUNICORN_THREADS 2
