@@ -182,6 +182,10 @@
 	  if(event.key !== "Enter") return; // Use `.key` instead.
 	  window.location.replace("http://howmanyloc.com/yaml/" + input.value);
       });
+
+      window.addEventListener("click", () => {
+	  input.focus();
+      });
     
   </script>
 
